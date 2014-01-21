@@ -38,8 +38,7 @@ import com.hp.hpl.jena.sparql.engine.http.QueryEngineHTTP ;
 
 public class TDBManager {
 	static String baseURI = "http://lodlinker.org/";
-	static String database = "/var/lib/tomcat7/webapps/database_lodlinker";
-	//static String database = "D:/workspace_Fuji/database/lodlinker";
+	static String database = "DB address";
 	static ReadWrite read = ReadWrite.READ;
 	static ReadWrite write = ReadWrite.WRITE;
 

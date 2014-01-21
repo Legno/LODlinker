@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/src/lodlinker
+END
+LODGetter.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/tos/!svn/ver/135/lodlinker/WEB-INF/src/lodlinker/LODGetter.java
+END
+TDBManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/tos/!svn/ver/135/lodlinker/WEB-INF/src/lodlinker/TDBManager.java
+END
+FunctionRoot.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/tos/!svn/ver/135/lodlinker/WEB-INF/src/lodlinker/FunctionRoot.java
+END
+RDFConnector.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/src/lodlinker/RDFConnector.java
+END
+LLErrorException.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/src/lodlinker/LLErrorException.java
+END
+test.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/src/lodlinker/test.java
+END

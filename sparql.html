@@ -1,0 +1,62 @@
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=SHIFT-JIS">
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+
+<script type="text/javascript" src="./js/connector.js"></script>
+<script type="text/javascript">
+
+	var conn = new connector("../LLservlet.jsp");
+
+	function SparqlSend(){
+		var stext = $("#sparql").val();
+
+		conn.executeQuery(stext,"HTML", maketable, getErrorMsg);
+
+	}
+
+
+	function maketable(re){
+		$("#table1").empty();
+		console.log(re);
+
+		if(re.queryType != undefined){
+			$("#table1").append(re.result);
+			return;
+		}
+		var str = new String("<tr>");
+		for(var i=0; i<re.getKeyListLength();i++){
+			str += "<td>"+re.getKey(i)+"</td>";
+		}
+		str += "</tr>";
+		while(re.next()){
+			for(var i=0; i < re.getLength();i++){
+				str += "<td><pre>"+re.getValue(i)+"</pre></td>";
+			}
+			str += "</tr>";
+		}
+		$("#table1").append(str);
+	}
+	function getErrorMsg(eType,eMsg,eMsg2){
+		alert(eMsg+"\n\n"+eMsg2);
+	}
+
+</script>
+</head>
+
+<body>
+<h1>検索結果</h1>
+<table border=1 id="table1">
+</table>
+
+<br><br><br>
+SPARQL入力
+<form id="form1">
+<textarea id="sparql" cols=40 rows=6>select * where{?s ?p ?o}</textarea>
+</form>
+<input type="button" value="SPARQL送信" onclick="SparqlSend()">
+
+</body>
+
+</html>

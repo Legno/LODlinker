@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=SHIFT-JIS">
+<!-- jQueryの読み込み -->
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+<!-- RDFmgrの読み込み -->
+<script type="text/javascript" src="./js/connector.js"></script>
+
+<script type="text/javascript">
+	//インスタンスの宣言
+
+	var conn = new connector();
+
+	function getRDF(){
+		var url = $("#url").val();
+		var label = $("#label").val();
+		var type = $("#type").val();
+
+		var func = function(re){
+			console.log(re);
+		}
+		conn.getRDFfile(url, label, type, func);
+	}
+
+</script>
+</head>
+<body>
+	<form id="form1">
+		RDFファイルのURL<br>
+		<input id="url" type="text" width="50"><br>
+		ラベル<br>
+		<input id="label" type="text" width="50"><br>
+		形式<br>
+		<input id="type" type="text" width="50"><br>
+		<input type="button" value="RDFファイル登録" onclick="getRDF()">
+	</form>
+</body>
+</html>

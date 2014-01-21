@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/servlet-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/jasper.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/jsp-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/el-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/annotations-api.jar"/>
+	<classpathentry kind="src" path="WEB-INF/src"/>
+	<classpathentry kind="src" output="work" path="work"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/gdata-client-1.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/gdata-client-meta-1.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/gdata-core-1.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/gdata-media-1.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/gdata-photos-2.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/guava-14.0.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/httpclient-4.2.3.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/httpcore-4.2.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/javax.mail.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jcl-over-slf4j-1.6.4.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jdom-2.0.5-contrib.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jdom-2.0.5-javadoc.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jdom-2.0.5-junit.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jdom-2.0.5-sources.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jdom-2.0.5.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jena-arq-2.10.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jena-core-2.10.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jena-iri-0.9.6.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jena-tdb-0.10.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jetty-util-9.0.4.v20130625.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jetty-xml-9.0.4.v20130625.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jsonic-1.2.11.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/mysql-connector-java-5.1.22-bin.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/orangesignal-csv-1.3.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/scribe-1.3.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/slf4j-log4j12-1.6.4.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="output" path="WEB-INF/classes"/>
+</classpath>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) Net Mania. All Rights Reserved. http://www.netmania.jp/ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
+<head profile="http://purl.org/net/ns/metaprof">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>About LODlinker</title>
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="keywords" content="キーワード,テンプレート,ネットマニア" lang="ja" xml:lang="ja" />
+<meta name="description" content="ネットマニアテンプレート" lang="ja" xml:lang="ja" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-language" content="ja" />
+<link rev="made" href="mailto:netmania@hogehogehoge.com" />
+<meta name="author" content="author" />
+<link rel="start" type="text/html" href="/about.html" />
+<meta name="copyright" content="Netmania All rights reserved." />
+<link rel="stylesheet" href="css/style_about.css" type="text/css" />
+<link rel="alternate" type="application/atom+xml" title="Atom" href="atom.xml" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="index.xml" />
+</head>
+
+<body>
+
+<div id="out">
+	<div id="head">
+
+	<h1>About LODlinker</h1>
+	<h2>このサイトについて</h2>
+	</div>
+
+	<div id="main">
+	<div id="menu"><a href="/about.html#1">LODlinkerとは</a> | <a href="/about.html#2">使い方(ブラウザから)</a> | <a href="/about.html#3">使い方(APIから)</a> | <a href="/about.html#4">Tips:データの構造化</a></div>
+
+	<h4 id="1">LODlinkerとは</h4>
+	<p>これまでLOD(RDFによる公開データ)を使うとき、または作っているとき、あるクラス(例えばhttp://dbpedia.org/ontology/Bookなど)について
+	</p>
+	<h5>「このクラスは他にどんなLODで使われているんだろう？」</h5>
+	<p>と思ったことがあると思います。LODを作る段階において、できるだけ共通の語彙(URI)を使いましょうと言われますが、
+	その効果を実感することは少なかったのではないでしょうか？</p>
+	<p>語彙を統一し構造化されたデータ(LOD)を作成することで、複数の情報源から機械的に取り出したデータを
+	アプリケーションで簡単に活用(データのマッシュアップ)できることが理想だと思います。
+	</p><p>しかし前述の問題が解決できず、アプリケーションの作成者はHUBサイト(CKAN等)を見に行き、
+	それらしいLODを探し、中身を確認することで目当てのLODを見つけていたと思います。</p>
+
+	<p><strong>LODlinker</strong>は、登録された各LODから収集した構造化データ(クラスの一覧)を各LODと結びつける形で保存しています。これを使うことで、クラスのURIや構造化データから目当てのLODを探し出すことが可能です。
+	ここでいうLODは、静的なRDFファイルであっても(SPARQLエンドポイントでなくても)構いません。</p>
+
+	<p>また各LODへSPARQLを送信する機能を実装しているので、
+	外部の様々なLOD(RDFファイルでも可)から検索結果を取り出し活用することができます。</p>
+
+	<p>現在LODlinkerには<a href="http://data.linkedopendata.jp/" target="_blank">CKAN</a>に登録されているLODの情報が格納されています。ただしCKANに登録されているURL
+	が直接RDFファイルまたはSPARQLエンドポイントを示していない場合登録されません。今後も取得先のHUBサイトは
+	追加していく予定です。</p>
+
+
+	<h4 id="2">使い方(ブラウザから)</h4>
+	<h3>LOD検索</h3>
+	TOPページには次の2つの入力欄があります。
+	<ul><li>URI検索 : 検索したいURIがはっきりしている場合はこちらでLOD検索を行います(例:http://dbpedia.org/ontology/Book)</li><li>キーワード検索 : URIがはっきりしていない場合、こちらで文字列一致による検索を行うことができます。(例:本)</li></ul>
+
+	<div align="center">
+	<img src="img/ss_top.png" width="550px"></img>
+	</div>
+	<p>キーワード検索の場合、そのキーワードがURIもしくはラベルに含まれているクラスを使ってLOD検索を行います。</p>
+	<p>検索を行うと次のような画面になります。(http://dbpedia.org/ontology/BookでURI検索した結果)</p>
+
+	<div align="center">
+	<img src="img/ss_search2.jpg" width="550px"></img>
+	</div>
+
+	<p>表示件数は1ページあたり50件で、表の下の三角アイコンをクリックすると次の(前の)50件を表示します。</p><p>
+	LODのURL横の虫眼鏡アイコンをクリックすると、URLで示された外部のLODへSPARQLを送信するための画面が表示されます。
+	SPARQLクエリを入力し検索ボタンを押すと、同じ画面に検索結果が表として出力されます。</p>
+
+	<p>各URIの横のiマークをクリックすると、次のような画面が表示されます。</p>
+	<div align="center">
+	<img src="img/ss_info.jpg" width="550px"></img>
+	</div>
+
+	<p>表示される主な情報は以下の通りです。
+	<ul>
+	<li>http://www.w3.org/2000/01/rdf-schema#label<ul><li>URIにつけられたラベルを示します</li></ul></li>
+	<li>http://lodlinker.org#describedIn<ul><li>URIが記述されているLODを示します</li></ul></li>
+	<li>http://www.w3.org/2000/01/rdf-schema#subClassOf<ul><li>URIのスーパークラスを示します</li></ul></li>
+	<li>http://www.w3.org/2002/07/owl#equivalentClass<ul><li>URIと同等なクラスを示します</li></ul></li>
+	</ul>
+	</p>
+
+	<h3>LOD登録</h3>
+	<p>LODの登録はトップページの下部から行うことができます。</p>
+	<div align="center">
+	<img src="img/ss_add_top.jpg" width="550px"></img>
+	</div>
+
+	<p>LODを登録というリンクをクリックすると、以下の画面が表示されます。</p>
+	<div align="center">
+	<img src="img/ss_add.jpg" width="550px"></img>
+	</div>
+	<p>まず最初に、登録するLODの形式をSPARQLエンドポイント又はRDFファイルから選んでください。それぞれで入力欄が切り替わります(画像はRDFファイルを選んだ状態)。
+	それぞれの入力内容は以下の通りです。
+
+	<ul><li>URL : 登録するLODのURLを入力してください</li><li>タイトル : LODのタイトルを入力してください</li><li>ファイル形式(RDFファイルの場合のみ) : 登録するRDFファイルの形式を
+	<ul><li>RDF/XML</li><li>TTL</li><li>N-TRIPLE</li><li>N3</li></ul>のいずれかから入力してください</li></ul>
+	</p>
+
+	<h4 id="3">使い方(WebAPIから)</h4>
+	<p>ブラウザから「book」でキーワード検索を行った場合、URLパラメータは次のようになります。</p>
+	<div align="center">
+	<img src="img/ss_api1.jpg" width="550px"></img>
+	</div>
+
+	<p>ここでパラメータ「output」の値をHTMLからJSONへ以下のように変えると、レスポンスがプログラムで読める形で返ってきます。
+	<ul><li><a href="http://lodlinker.org/?keyword=book&output=JSON&limit=50&offset=0" target="_blank">http://lodlinker.org/?keyword=book&output=JSON&limit=50&offset=0</a></li></ul></p>
+	<p>これはURI検索や外部LODへの検索についても同様で、outputパラメータを変更したURLにアクセスすることでSPARQLの検索結果が指定した形式で出力されます。</p>
+	<p>指定できるパラメータは以下の通りです。</p>
+	<table border="1">
+	<thead><tr><th>パラメータ名</th><th>解説</th></tr></thead>
+	<tbody><tr>
+	<td>output</td><td>データの出力形式を指定します。指定できる形式は"HTML","XML","JSON","TTL"のいずれかです。</td></tr>
+	<tr><td>uri</td><td>ここに指定された値でURI検索を行います。</td></tr>
+	<tr><td>keyword</td><td>ここに指定された値でキーワード検索を行います。uriと同時に指定された場合、uriが優先されます。</td></tr>
+	<tr><td>limit</td><td>URI検索またはキーワード検索の最大表示件数を指定します。</td></tr>
+	<tr><td>offset</td><td>URI検索またはキーワード検索の表示開始件数を指定します。</td></tr>
+	<tr><td>service</td><td>SPARQL検索を行う外部LODのURLを指定します。</td></tr>
+	<tr><td>query</td><td>外部LODにSPARQL検索を行う場合のクエリ式を指定します。</td></tr>
+	</tbody>
+	</table>
+
+	<h4 id="4">Tips:データの構造化</h4>
+	<p>上の方で構造化されたデータ(LOD)と書きましたが、単に表をLODにしただけでは構造化されているとはいえません。例えば以下のLODを見てください。</p>
+	<textarea readonly style="width: 639px; height: 160px;">
+    <#id_2>  lodcu:mail "aoyama_t@mail.com" ;
+        lodcu:名前 "青山 哲也" ;
+        lodcu:学籍番号 "ID09000" .
+    <#id_1>  lodcu:mail "fujiki_s@mail.com" ;
+        lodcu:名前 "藤木 晋太郎" ;
+        lodcu:学籍番号 "ID09038" .
+	</textarea>
+
+	<p>表を単純にLOD化したものですが、個別のデータが並んでいるだけで扱いにくく、LODlinkerもこのデータから構造を吸い出すことはできません。まずはここに「このデータは何なのか」という記述を追加してみます。</p>
+	<textarea readonly style="width: 639px; height: 200px;">
+    <#id_2>  lodcu:mail "aoyama_t@mail.com" ;
+        lodcu:名前 "青山 哲也" ;
+        lodcu:学籍番号 "ID09000" ;
+→      rdf:type <http://lodcu.cs.chubu.ac.jp/lodcu#学生> .
+    <#id_1>  lodcu:mail "fujiki_s@mail.com" ;
+        lodcu:名前 "藤木 晋太郎" ;
+        lodcu:学籍番号 "ID09038" ;
+→      rdf:type <http://lodcu.cs.chubu.ac.jp/lodcu#学生> .
+	</textarea>
+
+	<p>これがデータの構造化の第一歩となります。LODを読みに来たプログラムに、これは学生のデータだと示しています。LODlinkerはここから「このLODには学生のデータが記述されている」
+	という情報を取得し、検索対象に追加しています。</p>
+	<p>データの構造化をさらに進めていきましょう。次は学生について大雑把に記述を追加してみます。</p>
+
+	<textarea readonly style="width: 639px; height: 240px;" wrap="off">
+    <#id_2>  lodcu:mail "aoyama_t@mail.com" ;
+        lodcu:名前 "青山 哲也" ;
+        lodcu:学籍番号 "ID09000" ;
+        rdf:type <http://lodcu.cs.chubu.ac.jp/lodcu#学生> .
+    <#id_1>  lodcu:mail "fujiki_s@mail.com" ;
+        lodcu:名前 "藤木 晋太郎" ;
+        lodcu:学籍番号 "ID09038" ;
+        rdf:type <http://lodcu.cs.chubu.ac.jp/lodcu#学生> .
+
+→  <http://lodcu.cs.chubu.ac.jp/lodcu#学生> rdfs:subClassOf <http://lodcu.cs.chubu.ac.jp/lodcu#人>
+→  <http://lodcu.cs.chubu.ac.jp/lodcu#人> owl:equivalentClass <http://xmlns.com/foaf/0.1/Person>.
+	</textarea>
+
+	<p>学生は人(http://lodcu.cs.chubu.ac.jp/lodcu#人)のサブクラス(下位概念)であると示した後に、
+	ここで言っている「人」というのはPerson(http://xmlns.com/foaf/0.1/Person 以下foaf:Person)と同じ意味だと示してみました。これだけでも最初に比べると格段にデータが構造化されます。</p>
+
+	<p>foaf:PersonというURIは人に対して一般的に用いられるクラスです。こうしたよく普及している語彙に繋げていくこと(語彙の統一)によって、データが扱いやすくなるだけでなく、
+	LODlinkerなどにおいてデータを発見しやすくなります。</p>
+
+	<p>データを構造化するやり方は数えきれないほどありますが、まずはrdf:typeを指定することから始まります。その上でrdfs:subClassOfなどを使うことで
+	より概念データの構造を明らかにしていきます。</p>
+
+	<p>
+	LODlinkerはこういった構造化データをLODから取り出し、利用しています。データを構造化することで、LODが使われる機会が増えていけば、
+	より有用なアプリケーションが作られるきっかけになっていくと思われます。</p>
+
+	</div><!-- main -->
+
+<div id="footer">
+Copyright &copy; <a href="http://www.netmania.jp/">テンプレート</a> All Rights Reserved.
+</div><!-- footer -->
+
+</div><!-- out -->
+
+
+
+
+
+<!-- ↓削除禁止 -->
+<div class="copyright"><a href="http://www.netmania.jp/" target="_blank">テンプレート</a> by <a href="http://www.netmania.jp/" target="_blank">ネットマニア</a></div><!-- copyright -->
+
+</body></html>
+<!-- Copyright (C) Net Mania. All Rights Reserved. http://www.netmania.jp/ -->

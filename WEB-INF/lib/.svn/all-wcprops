@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib
+END
+httpcore-4.2.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/httpcore-4.2.2.jar
+END
+jcl-over-slf4j-1.6.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/jcl-over-slf4j-1.6.4.jar
+END
+xml-apis-1.4.01.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/xml-apis-1.4.01.jar
+END
+jena-tdb-0.10.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/jena-tdb-0.10.1.jar
+END
+commons-codec-1.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/commons-codec-1.6.jar
+END
+slf4j-api-1.6.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/slf4j-api-1.6.4.jar
+END
+slf4j-log4j12-1.6.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/slf4j-log4j12-1.6.4.jar
+END
+gdata-photos-2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/gdata-photos-2.0.jar
+END
+jsonic-1.2.11.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/jsonic-1.2.11.jar
+END
+jdom-2.0.5-junit.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/jdom-2.0.5-junit.jar
+END
+jena-arq-2.10.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/jena-arq-2.10.1.jar
+END
+gdata-client-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/gdata-client-1.0.jar
+END
+jena-core-2.10.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/jena-core-2.10.1.jar
+END
+gdata-client-meta-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/gdata-client-meta-1.0.jar
+END
+jdom-2.0.5-sources.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/jdom-2.0.5-sources.jar
+END
+log4j-1.2.16.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/log4j-1.2.16.jar
+END
+scribe-1.3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/scribe-1.3.0.jar
+END
+jetty-util-9.0.4.v20130625.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/jetty-util-9.0.4.v20130625.jar
+END
+guava-14.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/guava-14.0.1.jar
+END
+jena-iri-0.9.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/jena-iri-0.9.6.jar
+END
+orangesignal-csv-1.3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/orangesignal-csv-1.3.1.jar
+END
+xercesImpl-2.11.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/xercesImpl-2.11.0.jar
+END
+gdata-core-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/gdata-core-1.0.jar
+END
+httpclient-4.2.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/httpclient-4.2.3.jar
+END
+jdom-2.0.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/jdom-2.0.5.jar
+END
+jetty-xml-9.0.4.v20130625.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/jetty-xml-9.0.4.v20130625.jar
+END
+gdata-media-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/gdata-media-1.0.jar
+END
+javax.mail.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/javax.mail.jar
+END
+jdom-2.0.5-javadoc.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/jdom-2.0.5-javadoc.jar
+END
+mysql-connector-java-5.1.22-bin.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/mysql-connector-java-5.1.22-bin.jar
+END
+jdom-2.0.5-contrib.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/tos/!svn/ver/133/lodlinker/WEB-INF/lib/jdom-2.0.5-contrib.jar
+END
